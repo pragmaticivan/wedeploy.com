@@ -11,7 +11,7 @@
   "devDependencies": {
     "electric-cli": "^2.1.7",
     "electric-marble-components": "^2.0.1",
-    "marble": "^2.12.0",
+    "marble": "^2.13.0",
     "metal-toast": "^2.0.0",
     "metal-toggler": "^2.0.0"
   }
