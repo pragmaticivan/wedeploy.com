@@ -3,7 +3,8 @@
   "name": "wedeploy.com",
   "version": "2.0.0",
   "scripts": {
-    "start": "electric"
+    "start": "electric",
+    "build": "electric build"
   },
   "dependencies": {
     "moment": "2.0.0"
