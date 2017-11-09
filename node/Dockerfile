@@ -52,8 +52,8 @@ RUN mv $WEDEPLOY_ELECTRIC_DIRECTORY/dist $WEDEPLOY_MAGNET_DIRECTORY/electric
 
 # Run Magnet
 WORKDIR $WEDEPLOY_MAGNET_DIRECTORY
-RUN npm run build
-RUN npm run build:css
+RUN npm run build && \
+    npm run build:css
 
 # Clean up
 RUN apt-get purge --auto-remove \
