@@ -5,10 +5,9 @@ pipeline {
     }
   }
   stages {
-    stage('Build Docker image') {
+    stage('Clone repository') {
       steps {
-        cd node
-        def app = docker.build("wedeploy/wedeploy.com:${env.BRANCH_NAME}-${env.BUILD_ID}")
+        checkout scm
       }
     }
   }
