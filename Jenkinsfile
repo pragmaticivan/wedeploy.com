@@ -8,7 +8,7 @@ pipeline {
     stage('Build Docker image') {
       steps {
         cd node
-        app = docker.build("wedeploy/wedeploy.com:${env.BRANCH_NAME}-${env.BUILD_ID}")
+        def app = docker.build("wedeploy/wedeploy.com:${env.BRANCH_NAME}-${env.BUILD_ID}")
       }
     }
   }
