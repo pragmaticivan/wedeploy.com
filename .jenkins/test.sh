@@ -17,7 +17,9 @@ setup_tests() {
 
 run_tests() {
   cd ${CURRENT_DIR}/console-functional-tests
-  echo "Temp test"
+  echo "Running tests"
+  export LANDING_PAGE_URL=http://localhost:3001
+  bundle exec cucumber features -t @landing_page -p rerun --format junit --out test-results || cucumber @tmp/rerun.txt --format junit --out test-results
 }
 
 main "$@"
