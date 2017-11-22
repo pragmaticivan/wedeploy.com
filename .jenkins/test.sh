@@ -23,7 +23,7 @@ run_tests() {
   export LANDING_PAGE_URL=http://localhost:3001
   export DISPLAY=:99.0
   bundle install
-  bundle exec cucumber features -t @landing_page -p rerun --format junit --out "${CURRENT_DIR}/test-results" || cucumber @tmp/rerun.txt --format junit --out "${CURRENT_DIR}test-results"
+  bundle exec cucumber features -t @landing_page -p rerun --format junit --out test-results || cucumber @tmp/rerun.txt --format junit --out test-results
 }
 
 main "$@"
